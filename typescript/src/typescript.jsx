@@ -1,32 +1,21 @@
-doubleThePopulation(5);
+/**
+ * START: Follow the instructions below.
+ */
 
-doubleThePopulation("6.12");
-
-doubleThePopulation(8_526);
-
-doubleThePopulation(false);
-
-// Alter this function so the `language2` parameter is optional.
-// Hint: Check `language2` is not `undefined` before passing it to `console.log()`.
-
-function languagesSpoken(country: string, language1: string, language2?: string): void {
-    console.log(`The languages spoken in ${country} are:`);
-
-
-    if(language2 !== undefined){
-        console.log(language2)
-    }
-
-    console.log(language1);
-
-    console.log(language2);
+function getPopulation(): any {
+    return 69_950_850;
 }
 
-languagesSpoken("Colombia", "Spanish", "English");
+// Add a type assertion after the call to `getPopulation()`.
+// Hint: What's the actual type of the value returned by `getPopulation()`?
 
-languagesSpoken("Greece", "Greek");
+const population = getPopulation() as number ;
 
-languagesSpoken("New Zealand", "English", "Māori");
+// Now you've added a type assertion, there's a type error in the code below.
+// Remove the code that is incorrect.
+
+
+console.log(population * 2);
 
 // ----
 
